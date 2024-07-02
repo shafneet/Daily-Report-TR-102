@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('web3.webp');
+    /* Make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #000000, #434343);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+header img {
+    height: 50px;
+    margin: 5px 0;
+    max-width: 100%;
+}
+
+header .home-button {
+    background-color: #DA83EB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+header .home-button:hover {
+    background-color: #54025F;
+}
+
+/* Report Header Styles */
+.report-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.report-header h1 {
+    font-size: 2em;
+    /* Adjust this value for larger size */
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.report-header h2 {
+    font-size: 1.5em;
+    /* Adjust this value if needed */
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.report-header p {
+    color: #7f8c8d;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DA83EB;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #54025F;
+}
+
+/* Section Styles */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    /* Ensure main h1 is smaller than report header h1 */
+}
+
+/* PDF Container Styles */
+.pdf-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #434343, #000000);
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+footer a {
+    color: #DA83EB;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .home-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    .pdf-container iframe {
+        height: 400px;
+    }
+}
