@@ -22,7 +22,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    position:relative;
+    position: relative;
     z-index: 1;
 }
 
@@ -57,6 +57,11 @@ header .home-button {
 
 header .home-button:hover {
     background-color: #54025F;
+    transition: all;
+}
+
+header .home-button:active {
+    background-color: #9831a6;
 }
 
 /* Report Header Styles */
@@ -106,6 +111,11 @@ nav a {
 
 nav a:hover {
     background-color: #54025F;
+    transition: all;
+}
+
+nav a:active {
+    background-color: #c75cd5;
 }
 
 /* Section Styles */
