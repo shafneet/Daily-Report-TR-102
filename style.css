@@ -3,8 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('web3.webp');
-    /* Make sure the path is correct */
+    background-image: url('./images/web3.webp'); /* Make sure the path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,22 +70,17 @@ header .home-button:active {
 }
 
 .report-header h1 {
-    font-size: 2em;
-    /* Adjust this value for larger size */
     color: #2c3e50;
     margin-bottom: 10px;
 }
 
 .report-header h2 {
-    font-size: 1.5em;
-    /* Adjust this value if needed */
     color: #2c3e50;
     margin-bottom: 10px;
 }
 
 .report-header p {
     color: #7f8c8d;
-    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -136,12 +130,12 @@ p {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     /* Ensure main h1 is smaller than report header h1 */
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 1.59em;
     /* Ensure main h1 is smaller than report header h1 */
 }
 

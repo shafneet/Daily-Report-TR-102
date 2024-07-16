@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Done</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="https://www.gndec.ac.in/"><img src="./images/gndeclogo.jpg" alt="GNDEC Logo"></a>
+            <a href="index.html" class="home-button" onclick="showSection('home')">Home</a>
+        </header>
+        <div class="report-header">
+            <h1>Training TR-102 Daily Report</h1>
+            <h2>Tasks Done</h2>
+            <p>Submitted by:<br>Shafneet Kaur<br>URN 2203560 D2 CSE C1<br>Guru Nanak Dev Engineering College, Gill Park,Ludhiana</p>
+            <h2>4 Weeks Summer Training<br>on<br>Mastering the Semantic Web</h2>
+        </div>
+        <nav>
+            <a href="#" onclick="showSection('Task1')">Task1</a>
+            <a href="#" onclick="showSection('Task2')" >Task2</a>
+            <a href="#" onclick="showSection('Task3')" >Task3</a>
+            <a href="#" onclick="showSection('Task4')" >Task4</a>
+            <a href="#" onclick="showSection('Task5')">Task5</a>
+            <a href="#" onclick="showSection('Task6')" >Task6</a>
+            <a href="#" onclick="showSection('Task7')" >Task7</a>
+        </nav>
+        <section id="Task1" class="section">
+            <h1>Training Task1</h1>
+            <div class="pdf-container">
+                <iframe src="./html code/task1.html"></iframe>
+            </div>
+        </section>
+        <section id="Task2" class="section">
+            <h1>Training Task2</h1>
+            <div class="pdf-container">
+                <iframe src="./html code/task2.html"></iframe>
+            </div>
+        </section>
+        <section id="Task3" class="section">
+            <h1>Training Task3</h1>
+            <div class="pdf-container">
+                <iframe src="./html code/task3.html"></iframe>
+            </div>
+        </section>
+        <section id="Task4" class="section">
+            <h1>Training Task4</h1>
+            <div class="pdf-container">
+                <iframe src="./html code/food.html"></iframe>
+            </div>
+        </section>
+        <section id="Task5" class="section">
+            <h1>Training Task5</h1>
+            <div class="pdf-container">
+                <iframe src="./html code/travel.html"></iframe>
+            </div>
+        </section>
+        <section id="Task6" class="section">
+            <h1>Training Task6</h1>
+            <div class="pdf-container">
+                <iframe src="./WebVOWL.html"></iframe>
+            </div>
+        </section>
+        <section id="Task7" class="section">
+            <h1>Training Task6</h1>
+            <div class="pdf-container">
+                <iframe src="./WebVOWL2.html"></iframe>
+            </div>
+        </section>
+        <footer>
+            <a href="https://www.linkedin.com/in/shafneet-kaur-90434125b/"> <img src="./images/linkedin-logo.avif" alt="Unable to load" height="30px"></a>
+        </footer>
+    </div>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        } 
+    </script>
+</body>
+
+</html>
