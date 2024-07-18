@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Done</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="https://www.gndec.ac.in/"><img src="../images/gndeclogo.jpg" alt="GNDEC Logo"></a>
+            <a href="../index.html" class="home-button" onclick="showSection('home')">Home</a>
+        </header>
+        <div class="report-header">
+            <h1>Training TR-102 Daily Report</h1>
+            <h2>Tasks Done</h2>
+            <p>Submitted by:<br>Shafneet Kaur<br>URN 2203560 D2 CSE C1<br>Guru Nanak Dev Engineering College, Gill Park,Ludhiana</p>
+            <h2>4 Weeks Summer Training<br>on<br>Mastering the Semantic Web</h2>
+            <h3>E Commerce Website Project</h3>
+        </div>
+        <nav>
+            <a href="#" onclick="showSection('Graph')">RDF Graph</a>
+            <a href="#" onclick="showSection('Turtle')">Turtle File</a>
+        </nav>
+        <section id="Graph" class="section">
+            <h2>E Commerce Website Project RDF Graph</h2>
+            <div class="pdf-container">
+                <iframe src="../rdfs/rdf4/new_ontology2.svg"></iframe>
+            </div>
+        </section>
+        <section id="Turtle" class="section">
+            <h2>E Commerce Website Project Turtle File</h2>
+            <div class="pdf-container">
+                <iframe src="../rdfs/rdf4/NewOntology.ttl"></iframe>
+            </div>
+        </section>
+        <footer>
+            <a href="https://www.linkedin.com/in/shafneet-kaur-90434125b/"> <img src="../images/linkedin-logo.avif" alt="Unable to load" height="30px"></a>
+        </footer>
+    </div>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        } 
+    </script>
+</body>
+
+</html>

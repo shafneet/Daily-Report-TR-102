@@ -1,0 +1,1386 @@
+{
+  "_comment": "Empty ontology for WebVOWL Editor [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/2000/01/rdf-schema"
+    ],
+    "iri": "http://visualdataweb.org/newOntology/",
+    "title": {
+      "en": "New ontology"
+    },
+    "description": {
+      "en": "New ontology description"
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.21",
+      "translation": [
+        770.04,
+        157.66
+      ],
+      "paused": true
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "Class1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId8",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId9",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId10",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId11",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId13",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId14",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId15",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Class17",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId18",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Class19",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class20",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class21",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId23",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId22",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Class24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId26",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId25",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Class27",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class29",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class30",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class32",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId34",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId35",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Class37",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class38",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class43",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class44",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Class46",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId47",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId50",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId51",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId52",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId53",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "NodeId55",
+      "type": "rdfs:Datatype"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "Class1",
+      "iri": "http://visualdataweb.org/newOntology/Shop_Easy",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Teams",
+      "pos": [
+        -1880.5,
+        836.07
+      ]
+    },
+    {
+      "id": "Class2",
+      "iri": "http://visualdataweb.org/newOntology/Management_Team",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Management Team",
+      "pos": [
+        -1955.95,
+        1139.09
+      ]
+    },
+    {
+      "id": "Class4",
+      "iri": "http://visualdataweb.org/newOntology/Development_Team",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Development Team",
+      "pos": [
+        -1683.96,
+        1130.25
+      ]
+    },
+    {
+      "id": "Class5",
+      "iri": "http://visualdataweb.org/newOntology/Project",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Project Manager ",
+      "pos": [
+        -1997.56,
+        1315.18
+      ]
+    },
+    {
+      "id": "Class6",
+      "iri": "http://visualdataweb.org/newOntology/",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Developers",
+      "pos": [
+        -1562.88,
+        1322.59
+      ]
+    },
+    {
+      "id": "NodeId8",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "pos": [
+        -1642.55,
+        1641.94
+      ]
+    },
+    {
+      "id": "NodeId9",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "number",
+      "pos": [
+        -1388.87,
+        1637.72
+      ]
+    },
+    {
+      "id": "NodeId10",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "pos": [
+        -1181.69,
+        1542.96
+      ]
+    },
+    {
+      "id": "NodeId11",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "pos": [
+        -1140.3,
+        1320.82
+      ]
+    },
+    {
+      "id": "NodeId13",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "pos": [
+        -2376.59,
+        1323.07
+      ]
+    },
+    {
+      "id": "NodeId14",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "number",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -2244.14,
+        1633.5
+      ]
+    },
+    {
+      "id": "NodeId15",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "pos": [
+        -1984.75,
+        1663.85
+      ]
+    },
+    {
+      "id": "Class17",
+      "iri": "http://visualdataweb.org/newOntology/Class17",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shop Easy",
+      "pos": [
+        -1892.22,
+        611.7
+      ]
+    },
+    {
+      "id": "NodeId18",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "project",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -2319.46,
+        614.59
+      ]
+    },
+    {
+      "id": "Class19",
+      "iri": "http://visualdataweb.org/newOntology/Sprint",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Sprint",
+      "pos": [
+        -1482.01,
+        825.89
+      ]
+    },
+    {
+      "id": "Class20",
+      "iri": "http://visualdataweb.org/newOntology/sprint1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "sprint1",
+      "pos": [
+        -1220.08,
+        686.94
+      ]
+    },
+    {
+      "id": "Class21",
+      "iri": "http://visualdataweb.org/newOntology/sprint2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "sprint2",
+      "pos": [
+        -1216.27,
+        1006.88
+      ]
+    },
+    {
+      "id": "NodeId23",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Sprint 2",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -1402.39,
+        1177.65
+      ]
+    },
+    {
+      "id": "NodeId22",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Sprint 1",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -1372.79,
+        506.39
+      ]
+    },
+    {
+      "id": "Class24",
+      "iri": "http://visualdataweb.org/newOntology/2_weeks",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "2 weeks",
+      "pos": [
+        -914.88,
+        823.07
+      ]
+    },
+    {
+      "id": "NodeId26",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "Develop product catalog and search functionality",
+      "pos": [
+        -1073.77,
+        1179.15
+      ]
+    },
+    {
+      "id": "NodeId25",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Setup the project and initial architecture",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -1076.1,
+        499.9
+      ]
+    },
+    {
+      "id": "Class27",
+      "iri": "http://visualdataweb.org/newOntology/User_Story",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "User Story1",
+      "pos": [
+        -696.04,
+        283.14
+      ]
+    },
+    {
+      "id": "Class29",
+      "iri": "http://visualdataweb.org/newOntology/User_Story2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "User Story2",
+      "pos": [
+        -716.84,
+        1163.47
+      ]
+    },
+    {
+      "id": "Class30",
+      "iri": "http://visualdataweb.org/newOntology/user feedback1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "user feedback1",
+      "pos": [
+        -385.44,
+        71.7
+      ]
+    },
+    {
+      "id": "Class31",
+      "iri": "http://visualdataweb.org/newOntology/user_feedback2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "user feedback2",
+      "pos": [
+        -387.55,
+        547.18
+      ]
+    },
+    {
+      "id": "Class32",
+      "iri": "http://visualdataweb.org/newOntology/user_feedback3",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "user feedback3",
+      "pos": [
+        -382.76,
+        932.32
+      ]
+    },
+    {
+      "id": "Class33",
+      "iri": "http://visualdataweb.org/newOntology/user_feedback4",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "user feedback4",
+      "pos": [
+        -370.28,
+        1395.87
+      ]
+    },
+    {
+      "id": "NodeId34",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Shopping account",
+      "pos": [
+        -383.94,
+        -159.56
+      ]
+    },
+    {
+      "id": "NodeId35",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Account login",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -387.93,
+        295.9
+      ]
+    },
+    {
+      "id": "Class37",
+      "iri": "http://visualdataweb.org/newOntology/task1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task1",
+      "pos": [
+        -57.1,
+        74.69
+      ]
+    },
+    {
+      "id": "Class38",
+      "iri": "http://visualdataweb.org/newOntology/task2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task2",
+      "pos": [
+        -36.26,
+        546.23
+      ]
+    },
+    {
+      "id": "Class43",
+      "iri": "http://visualdataweb.org/newOntology/task1_1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task1_1",
+      "pos": [
+        312.39,
+        -145
+      ]
+    },
+    {
+      "id": "Class44",
+      "iri": "http://visualdataweb.org/newOntology/task",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task1_2",
+      "pos": [
+        326.05,
+        245.43
+      ]
+    },
+    {
+      "id": "Class45",
+      "iri": "http://visualdataweb.org/newOntology/task2_1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task2_1",
+      "pos": [
+        311.93,
+        396.51
+      ]
+    },
+    {
+      "id": "Class46",
+      "iri": "http://visualdataweb.org/newOntology/task2_2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task2_2",
+      "pos": [
+        323.22,
+        760.78
+      ]
+    },
+    {
+      "id": "NodeId47",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Browse products",
+      "pos": [
+        26.12,
+        933.17
+      ]
+    },
+    {
+      "id": "NodeId50",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Search products",
+      "pos": [
+        21.46,
+        1403.58
+      ]
+    },
+    {
+      "id": "NodeId51",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Account registration form",
+      "pos": [
+        779.56,
+        -144.15
+      ]
+    },
+    {
+      "id": "NodeId52",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Implement backend for user registration ",
+      "pos": [
+        794.93,
+        246.28
+      ]
+    },
+    {
+      "id": "NodeId53",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Design login form",
+      "pos": [
+        809.96,
+        397.36
+      ]
+    },
+    {
+      "id": "NodeId55",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Implement authentication mechanism",
+      "pos": [
+        828.11,
+        765.06
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "objectProperty3",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty4",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty5",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty6",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty7",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty8",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty9",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty10",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty11",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty12",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty13",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "objectProperty15",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty16",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "objectProperty18",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty19",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty20",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty21",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty22",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "objectProperty23",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty24",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty25",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty26",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "objectProperty27",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty31",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty32",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty33",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty34",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty35",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty36",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty37",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "objectProperty38",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty40",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty45",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty46",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty47",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty48",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty49",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty52",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty53",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty54",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty55",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty56",
+      "type": "owl:DatatypeProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "objectProperty3",
+      "iri": "http://visualdataweb.org/newOntology/team1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "team1",
+      "domain": "Class1",
+      "range": "Class2",
+      "pos": [
+        -1918.22,
+        987.58
+      ]
+    },
+    {
+      "id": "objectProperty4",
+      "iri": "http://visualdataweb.org/newOntology/team2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "team2",
+      "domain": "Class1",
+      "range": "Class4",
+      "pos": [
+        -1782.23,
+        983.16
+      ]
+    },
+    {
+      "id": "objectProperty5",
+      "iri": "http://visualdataweb.org/newOntology/team1_members",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "team1 members",
+      "domain": "Class2",
+      "range": "Class5",
+      "pos": [
+        -1976.75,
+        1227.13
+      ]
+    },
+    {
+      "id": "objectProperty6",
+      "iri": "http://visualdataweb.org/newOntology/team2_members",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "team2 members",
+      "domain": "Class4",
+      "range": "Class6",
+      "pos": [
+        -1623.42,
+        1226.42
+      ]
+    },
+    {
+      "id": "datatypeProperty7",
+      "iri": "http://visualdataweb.org/newOntology/name",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "name",
+      "domain": "Class6",
+      "range": "NodeId8",
+      "pos": [
+        -1607.52,
+        1501.52
+      ]
+    },
+    {
+      "id": "datatypeProperty8",
+      "iri": "http://visualdataweb.org/newOntology/contact",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "contact",
+      "domain": "Class6",
+      "range": "NodeId9",
+      "pos": [
+        -1466.55,
+        1497.04
+      ]
+    },
+    {
+      "id": "datatypeProperty9",
+      "iri": "http://visualdataweb.org/newOntology/email",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "email",
+      "domain": "Class6",
+      "range": "NodeId10",
+      "pos": [
+        -1359.29,
+        1440.28
+      ]
+    },
+    {
+      "id": "datatypeProperty10",
+      "iri": "http://visualdataweb.org/newOntology/designation",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "designation",
+      "domain": "Class6",
+      "range": "NodeId11",
+      "pos": [
+        -1338.84,
+        1321.65
+      ]
+    },
+    {
+      "id": "datatypeProperty11",
+      "iri": "http://visualdataweb.org/newOntology/name1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "name1",
+      "domain": "Class5",
+      "range": "NodeId13",
+      "pos": [
+        -2199.82,
+        1319.39
+      ]
+    },
+    {
+      "id": "datatypeProperty12",
+      "iri": "http://visualdataweb.org/newOntology/contact1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "contact1",
+      "domain": "Class5",
+      "range": "NodeId14",
+      "pos": [
+        -2132.29,
+        1489.1
+      ]
+    },
+    {
+      "id": "datatypeProperty13",
+      "iri": "http://visualdataweb.org/newOntology/email1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "email1",
+      "domain": "Class5",
+      "range": "NodeId15",
+      "pos": [
+        -1990.42,
+        1509.5
+      ]
+    },
+    {
+      "id": "objectProperty15",
+      "iri": "http://visualdataweb.org/newOntology/objectProperty15",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "newObjectProperty",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class17",
+      "range": "Class1",
+      "pos": [
+        -1886.36,
+        723.88
+      ]
+    },
+    {
+      "id": "datatypeProperty16",
+      "iri": "http://visualdataweb.org/newOntology/type",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "type",
+      "domain": "Class17",
+      "range": "NodeId18",
+      "pos": [
+        -2116.84,
+        613.22
+      ]
+    },
+    {
+      "id": "objectProperty18",
+      "iri": "http://visualdataweb.org/newOntology/plan",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "plan",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class17",
+      "range": "Class19",
+      "pos": [
+        -1687.11,
+        718.79
+      ]
+    },
+    {
+      "id": "objectProperty19",
+      "iri": "http://visualdataweb.org/newOntology/type1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "type1",
+      "domain": "Class19",
+      "range": "Class20",
+      "pos": [
+        -1351.04,
+        756.41
+      ]
+    },
+    {
+      "id": "objectProperty20",
+      "iri": "http://visualdataweb.org/newOntology/type2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "type2",
+      "domain": "Class19",
+      "range": "Class21",
+      "pos": [
+        -1349.14,
+        916.39
+      ]
+    },
+    {
+      "id": "datatypeProperty21",
+      "iri": "http://visualdataweb.org/newOntology/name_1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "name_1",
+      "domain": "Class20",
+      "range": "NodeId22",
+      "pos": [
+        -1308.35,
+        582.58
+      ]
+    },
+    {
+      "id": "datatypeProperty22",
+      "iri": "http://visualdataweb.org/newOntology/name2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "name2",
+      "domain": "Class21",
+      "range": "NodeId23",
+      "pos": [
+        -1322.3,
+        1104.17
+      ]
+    },
+    {
+      "id": "objectProperty23",
+      "iri": "http://visualdataweb.org/newOntology/duration",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "duration",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class21",
+      "range": "Class24",
+      "pos": [
+        -1065.58,
+        914.98
+      ]
+    },
+    {
+      "id": "objectProperty24",
+      "iri": "http://visualdataweb.org/newOntology/duration",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "duration",
+      "domain": "Class20",
+      "range": "Class24",
+      "pos": [
+        -1067.48,
+        755
+      ]
+    },
+    {
+      "id": "datatypeProperty25",
+      "iri": "http://visualdataweb.org/newOntology/goal1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "goal1",
+      "domain": "Class20",
+      "range": "NodeId25",
+      "pos": [
+        -1136.69,
+        578.61
+      ]
+    },
+    {
+      "id": "datatypeProperty26",
+      "iri": "http://visualdataweb.org/newOntology/goal2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "goal2",
+      "domain": "Class21",
+      "range": "NodeId26",
+      "pos": [
+        -1133.22,
+        1107.28
+      ]
+    },
+    {
+      "id": "objectProperty27",
+      "iri": "http://visualdataweb.org/newOntology/feedback",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "feedback",
+      "domain": "Class20",
+      "range": "Class27",
+      "pos": [
+        -958.06,
+        485.04
+      ]
+    },
+    {
+      "id": "objectProperty31",
+      "iri": "http://visualdataweb.org/newOntology/feedback",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "feedback",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class21",
+      "range": "Class29",
+      "pos": [
+        -966.56,
+        1085.18
+      ]
+    },
+    {
+      "id": "objectProperty32",
+      "iri": "http://visualdataweb.org/newOntology/feedback1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "feedback1",
+      "domain": "Class27",
+      "range": "Class30",
+      "pos": [
+        -540.74,
+        177.42
+      ]
+    },
+    {
+      "id": "objectProperty33",
+      "iri": "http://visualdataweb.org/newOntology/feedback2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "feedback2",
+      "domain": "Class27",
+      "range": "Class31",
+      "pos": [
+        -541.8,
+        415.16
+      ]
+    },
+    {
+      "id": "objectProperty34",
+      "iri": "http://visualdataweb.org/newOntology/feedback3",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "feedback3",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class29",
+      "range": "Class32",
+      "pos": [
+        -549.8,
+        1047.9
+      ]
+    },
+    {
+      "id": "objectProperty35",
+      "iri": "http://visualdataweb.org/newOntology/feedback4",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "feedback4",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class29",
+      "range": "Class33",
+      "pos": [
+        -543.56,
+        1279.67
+      ]
+    },
+    {
+      "id": "datatypeProperty36",
+      "iri": "http://visualdataweb.org/newOntology/description1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "description1",
+      "domain": "Class30",
+      "range": "NodeId34",
+      "pos": [
+        -384.56,
+        -63.93
+      ]
+    },
+    {
+      "id": "datatypeProperty37",
+      "iri": "http://visualdataweb.org/newOntology/description2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "description2",
+      "domain": "Class31",
+      "range": "NodeId35",
+      "pos": [
+        -387.77,
+        401.54
+      ]
+    },
+    {
+      "id": "objectProperty38",
+      "iri": "http://visualdataweb.org/newOntology/task_a",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task_a",
+      "domain": "Class30",
+      "range": "Class37",
+      "pos": [
+        -221.27,
+        73.2
+      ]
+    },
+    {
+      "id": "objectProperty40",
+      "iri": "http://visualdataweb.org/newOntology/task_b",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task_b",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class31",
+      "range": "Class38",
+      "pos": [
+        -211.9,
+        546.71
+      ]
+    },
+    {
+      "id": "objectProperty45",
+      "iri": "http://visualdataweb.org/newOntology/task_a1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task_a1",
+      "domain": "Class37",
+      "range": "Class43",
+      "pos": [
+        127.64,
+        -35.15
+      ]
+    },
+    {
+      "id": "objectProperty46",
+      "iri": "http://visualdataweb.org/newOntology/task_a2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task_a2",
+      "domain": "Class37",
+      "range": "Class44",
+      "pos": [
+        134.47,
+        160.06
+      ]
+    },
+    {
+      "id": "objectProperty47",
+      "iri": "http://visualdataweb.org/newOntology/task_b1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task_b1",
+      "domain": "Class38",
+      "range": "Class45",
+      "pos": [
+        137.83,
+        471.37
+      ]
+    },
+    {
+      "id": "objectProperty48",
+      "iri": "http://visualdataweb.org/newOntology/task_b2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "task_b2",
+      "domain": "Class38",
+      "range": "Class46",
+      "pos": [
+        143.48,
+        653.51
+      ]
+    },
+    {
+      "id": "datatypeProperty49",
+      "iri": "http://visualdataweb.org/newOntology/description3",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "description3",
+      "domain": "Class32",
+      "range": "NodeId47",
+      "pos": [
+        -180.57,
+        932.74
+      ]
+    },
+    {
+      "id": "datatypeProperty52",
+      "iri": "http://visualdataweb.org/newOntology/description4",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "description4",
+      "domain": "Class33",
+      "range": "NodeId50",
+      "pos": [
+        -176.16,
+        1399.69
+      ]
+    },
+    {
+      "id": "datatypeProperty53",
+      "iri": "http://visualdataweb.org/newOntology/description",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "description1_1",
+      "domain": "Class43",
+      "range": "NodeId51",
+      "pos": [
+        540.97,
+        -144.58
+      ]
+    },
+    {
+      "id": "datatypeProperty54",
+      "iri": "http://visualdataweb.org/newOntology/description",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "description1_2",
+      "domain": "Class44",
+      "range": "NodeId52",
+      "pos": [
+        555.49,
+        245.84
+      ]
+    },
+    {
+      "id": "datatypeProperty55",
+      "iri": "http://visualdataweb.org/newOntology/description2_1",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "description2_1",
+      "domain": "Class45",
+      "range": "NodeId53",
+      "pos": [
+        557.69,
+        396.92
+      ]
+    },
+    {
+      "id": "datatypeProperty56",
+      "iri": "http://visualdataweb.org/newOntology/description2_2",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "description2_2",
+      "domain": "Class46",
+      "range": "NodeId55",
+      "pos": [
+        570.67,
+        762.88
+      ]
+    }
+  ]
+}

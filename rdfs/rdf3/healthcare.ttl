@@ -1,0 +1,191 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 18 ###
+#  --------------------------- Property 0------------------------- 
+:hasSpecializationOf rdf:type owl:ObjectProperty ;
+                     rdfs:label "hasSpecializationOf"@en; 
+                     rdfs:domain :Gmail;
+                     rdfs:range :Specializations . 
+#  --------------------------- Property 1------------------------- 
+:haveMedicalRecord rdf:type owl:ObjectProperty ;
+                   rdfs:label "haveMedicalRecord"@en; 
+                   rdfs:domain :Drive;
+                   rdfs:range :Medical_Records . 
+#  --------------------------- Property 2------------------------- 
+:givenTo rdf:type owl:ObjectProperty ;
+         rdfs:label "givenTo"@en; 
+         rdfs:domain :Appointments;
+         rdfs:range :Drive . 
+#  --------------------------- Property 3------------------------- 
+:give rdf:type owl:ObjectProperty ;
+      rdfs:label "give"@en; 
+      rdfs:domain :Gmail;
+      rdfs:range :Appointments . 
+#  --------------------------- Property 4------------------------- 
+:giveAppointment rdf:type owl:ObjectProperty ;
+                 rdfs:label "giveAppointment"@en; 
+                 rdfs:domain :Gmail;
+                 rdfs:range :Class10 . 
+#  --------------------------- Property 5------------------------- 
+:hasSchedule rdf:type owl:ObjectProperty ;
+             rdfs:label "hasSchedule"@en; 
+             rdfs:domain :Class10;
+             rdfs:range :Schedule . 
+#  --------------------------- Property 6------------------------- 
+:venue rdf:type owl:ObjectProperty ;
+       rdfs:label "venue"@en; 
+       rdfs:domain :Class10;
+       rdfs:range :Location . 
+#  --------------------------- Property 7------------------------- 
+:haveStatus rdf:type owl:ObjectProperty ;
+            rdfs:label "haveStatus"@en; 
+            rdfs:domain :Class10;
+            rdfs:range :Status . 
+#  --------------------------- Property 8------------------------- 
+:hasHistory rdf:type owl:ObjectProperty ;
+            rdfs:label "hasHistory"@en; 
+            rdfs:domain :Medical_Records;
+            rdfs:range :Histroy . 
+#  --------------------------- Property 9------------------------- 
+:hasDiagnosis rdf:type owl:ObjectProperty ;
+              rdfs:label "hasDiagnosis"@en; 
+              rdfs:domain :Medical_Records;
+              rdfs:range :Diagnosis . 
+#  --------------------------- Property 10------------------------- 
+:requiredTreatment rdf:type owl:ObjectProperty ;
+                   rdfs:label "requiredTreatment"@en; 
+                   rdfs:domain :Medical_Records;
+                   rdfs:range :Treatment . 
+#  --------------------------- Property 11------------------------- 
+:prescribedMedication rdf:type owl:ObjectProperty ;
+                      rdfs:label "prescribedMedication"@en; 
+                      rdfs:domain :Appointments;
+                      rdfs:range :Medication . 
+#  --------------------------- Property 12------------------------- 
+:amount rdf:type owl:ObjectProperty ;
+        rdfs:label "amount"@en; 
+        rdfs:domain :Appointments;
+        rdfs:range :Dosage . 
+#  --------------------------- Property 13------------------------- 
+:pname rdf:type owl:DatatypeProperty ;
+       rdfs:label "pname"@en; 
+       rdfs:domain :Drive;
+       rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 14------------------------- 
+:dname rdf:type owl:DatatypeProperty ;
+       rdfs:label "dname"@en; 
+       rdfs:domain :Gmail;
+       rdfs:range xsd:string . 
+#  --------------------------- Property 15------------------------- 
+:pID rdf:type owl:DatatypeProperty ;
+     rdfs:label "pID"@en; 
+     rdfs:domain :Drive;
+     rdfs:range xsd:string . 
+#  --------------------------- Property 16------------------------- 
+:dID rdf:type owl:DatatypeProperty ;
+     rdfs:label "dID"@en; 
+     rdfs:domain :Gmail;
+     rdfs:range xsd:string . 
+#  --------------------------- Property 17------------------------- 
+:hasDescription rdf:type owl:DatatypeProperty ;
+                rdfs:label "hasDescription"@en; 
+                rdfs:domain :Medical_Records;
+                rdfs:range xsd:string . 
+###  Class Definitions (Number of Classes) 15 ###
+#  --------------------------- Class  0------------------------- 
+:Google rdf:type owl:Class; 
+        rdfs:label "Healthcare Management System"@en . 
+#  --------------------------- Class  1------------------------- 
+:Gmail rdf:type owl:Class; 
+       rdfs:subClassOf :Google ;
+       rdfs:label "Doctors"@en . 
+#  --------------------------- Class  2------------------------- 
+:Drive rdf:type owl:Class; 
+       rdfs:subClassOf :Google ;
+       rdfs:label "Pateints"@en . 
+#  --------------------------- Class  3------------------------- 
+:Medical_Records rdf:type owl:Class; 
+                 rdfs:label "Medical Records"@en . 
+#  --------------------------- Class  4------------------------- 
+:Appointments rdf:type owl:Class; 
+              rdfs:label "Prescription"@en . 
+#  --------------------------- Class  5------------------------- 
+:Class10 rdf:type owl:Class; 
+         rdfs:label "Appointments"@en . 
+#  --------------------------- Class  6------------------------- 
+:Specializations rdf:type owl:Class; 
+                 rdfs:label "Specializations"@en . 
+#  --------------------------- Class  7------------------------- 
+:Schedule rdf:type owl:Class; 
+          rdfs:label "Schedule"@en . 
+#  --------------------------- Class  8------------------------- 
+:Location rdf:type owl:Class; 
+          rdfs:label "Location"@en . 
+#  --------------------------- Class  9------------------------- 
+:Status rdf:type owl:Class; 
+        rdfs:label "Status"@en . 
+#  --------------------------- Class  10------------------------- 
+:Histroy rdf:type owl:Class; 
+         rdfs:label "Histroy"@en . 
+#  --------------------------- Class  11------------------------- 
+:Diagnosis rdf:type owl:Class; 
+           rdfs:label "Diagnosis"@en . 
+#  --------------------------- Class  12------------------------- 
+:Treatment rdf:type owl:Class; 
+           rdfs:label "Treatment"@en . 
+#  --------------------------- Class  13------------------------- 
+:Medication rdf:type owl:Class; 
+            rdfs:label "Medication"@en . 
+#  --------------------------- Class  14------------------------- 
+:Dosage rdf:type owl:Class; 
+        rdfs:label "Dosage"@en . 
+
+#  --------------------------- Data ------------------------- 
+:Gmail1 rdf:type :Gmail ;
+    :hasSpecializationOf :Cardiology ;
+    :dname "Dr. Smith"^^xsd:string .
+
+:Gmail2 rdf:type :Gmail ;
+    :hasSpecializationOf :Neurology ;
+    :dname "Dr. Johnson"^^xsd:string .
+
+:Drive1 rdf:type :Drive ;
+    :pname "John Doe"^^xsd:string ;
+    :pID "P001"^^xsd:string .
+
+:Drive2 rdf:type :Drive ;
+    :pname "Jane Roe"^^xsd:string ;
+    :pID "P002"^^xsd:string .
+
+:Appointment1 rdf:type :Appointments ;
+    :givenTo :Drive1 ;
+    :prescribedMedication :Medication1 ;
+    :amount :Dosage1 ;
+    :appointmentDateTime "2024-07-01T10:00:00"^^xsd:dateTime ;
+    :givenBy :Gmail1 . # This line links the appointment to the doctor
+
+:Appointment2 rdf:type :Appointments ;
+    :givenTo :Drive2 ;
+    :prescribedMedication :Medication2 ;
+    :amount :Dosage2 ;
+    :appointmentDateTime "2024-07-02T11:00:00"^^xsd:dateTime ;
+    :givenBy :Gmail2 . # This line links the appointment to the doctor

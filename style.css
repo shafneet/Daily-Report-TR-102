@@ -79,6 +79,11 @@ header .home-button:active {
     margin-bottom: 10px;
 }
 
+.report-header h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
 .report-header p {
     color: #7f8c8d;
     margin-bottom: 10px;
@@ -123,6 +128,7 @@ nav a:active {
 
 h1,
 h2,
+h3,
 p {
     text-align: center;
     color: #2c3e50;
@@ -137,6 +143,10 @@ h1 {
 h2 {
     font-size: 1.59em;
     /* Ensure main h1 is smaller than report header h1 */
+}
+
+h3 {
+    font-size: 1.3em;
 }
 
 p{

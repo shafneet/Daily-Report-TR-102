@@ -1,0 +1,109 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 13 ###
+#  --------------------------- Property 0------------------------- 
+:born_on rdf:type owl:DatatypeProperty ;
+         rdfs:label "born on"@en; 
+         rdfs:domain :Arjan;
+         rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 1------------------------- 
+:hobby rdf:type owl:DatatypeProperty ;
+       rdfs:label "hobby"@en; 
+       rdfs:domain :Arjan;
+       rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 2------------------------- 
+:friend rdf:type owl:ObjectProperty ;
+        rdfs:label "friend"@en; 
+        rdfs:domain :Arjan;
+        rdfs:range :B . 
+#  --------------------------- Property 3------------------------- 
+:lives_in rdf:type owl:DatatypeProperty ;
+          rdfs:label "lives in"@en; 
+          rdfs:domain :Arjan;
+          rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 4------------------------- 
+:friend2 rdf:type owl:ObjectProperty ;
+         rdfs:label "friend2"@en; 
+         rdfs:domain :Arjan;
+         rdfs:range :Cheryl . 
+#  --------------------------- Property 5------------------------- 
+:interested_in_ rdf:type owl:DatatypeProperty ;
+                rdfs:label "interested in "@en; 
+                rdfs:domain :Cheryl;
+                rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 6------------------------- 
+:hobby rdf:type owl:DatatypeProperty ;
+       rdfs:label "hobby"@en; 
+       rdfs:domain :B;
+       rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 7------------------------- 
+:interested_in rdf:type owl:ObjectProperty ;
+               rdfs:label "interested in"@en; 
+               rdfs:domain :Arjan;
+               rdfs:range :Harry_Potter . 
+#  --------------------------- Property 8------------------------- 
+:interested_in2 rdf:type owl:ObjectProperty ;
+                rdfs:label "interested in2"@en; 
+                rdfs:domain :B;
+                rdfs:range :Robert_Galbraith . 
+#  --------------------------- Property 9------------------------- 
+:Author rdf:type owl:ObjectProperty ;
+        rdfs:label "Author"@en; 
+        rdfs:domain :Harry_Potter;
+        rdfs:range :JK_Rowling . 
+#  --------------------------- Property 10------------------------- 
+:Author2 rdf:type owl:ObjectProperty ;
+         rdfs:label "Author2"@en; 
+         rdfs:domain :Robert_Galbraith;
+         rdfs:range :JK_Rowling . 
+#  --------------------------- Property 11------------------------- 
+:written rdf:type owl:DatatypeProperty ;
+         rdfs:label "written"@en; 
+         rdfs:domain :Harry_Potter;
+         rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 12------------------------- 
+:lives_in rdf:type owl:DatatypeProperty ;
+          rdfs:label "lives in"@en; 
+          rdfs:domain :Arjan;
+          rdfs:range rdfs:Datatype . 
+###  Class Definitions (Number of Classes) 7 ###
+#  --------------------------- Class  0------------------------- 
+:Arjan rdf:type owl:Class; 
+       rdfs:label "Arjan"@en . 
+#  --------------------------- Class  1------------------------- 
+:B rdf:type owl:Class; 
+   rdfs:label "Bina"@en . 
+#  --------------------------- Class  2------------------------- 
+:Cheryl rdf:type owl:Class; 
+        rdfs:label "Cheryl"@en . 
+#  --------------------------- Class  3------------------------- 
+:Class21 rdf:type owl:Class; 
+         rdfs:label "NewClass"@en . 
+#  --------------------------- Class  4------------------------- 
+:Harry_Potter rdf:type owl:Class; 
+              rdfs:label "Harry Potter"@en . 
+#  --------------------------- Class  5------------------------- 
+:Robert_Galbraith rdf:type owl:Class; 
+                  rdfs:label "Robert Galbraith"@en . 
+#  --------------------------- Class  6------------------------- 
+:JK_Rowling rdf:type owl:Class; 
+            rdfs:label "JK Rowling"@en . 

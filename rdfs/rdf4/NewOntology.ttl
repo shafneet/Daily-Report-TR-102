@@ -1,0 +1,299 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 42 ###
+#  --------------------------- Property 0------------------------- 
+:team1 rdf:type owl:ObjectProperty ;
+       rdfs:label "team1"@en; 
+       rdfs:domain :Shop_Easy;
+       rdfs:range :Management_Team . 
+#  --------------------------- Property 1------------------------- 
+:team2 rdf:type owl:ObjectProperty ;
+       rdfs:label "team2"@en; 
+       rdfs:domain :Shop_Easy;
+       rdfs:range :Development_Team . 
+#  --------------------------- Property 2------------------------- 
+:team1_members rdf:type owl:ObjectProperty ;
+               rdfs:label "team1 members"@en; 
+               rdfs:domain :Management_Team;
+               rdfs:range :Project . 
+#  --------------------------- Property 3------------------------- 
+:team2_members rdf:type owl:ObjectProperty ;
+               rdfs:label "team2 members"@en; 
+               rdfs:domain :Development_Team;
+               rdfs:range : . 
+#  --------------------------- Property 4------------------------- 
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:label "name"@en; 
+      rdfs:domain :;
+      rdfs:range xsd:string . 
+#  --------------------------- Property 5------------------------- 
+:contact rdf:type owl:DatatypeProperty ;
+         rdfs:label "contact"@en; 
+         rdfs:domain :;
+         rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 6------------------------- 
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:label "email"@en; 
+       rdfs:domain :;
+       rdfs:range xsd:string . 
+#  --------------------------- Property 7------------------------- 
+:designation rdf:type owl:DatatypeProperty ;
+             rdfs:label "designation"@en; 
+             rdfs:domain :;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 8------------------------- 
+:name1 rdf:type owl:DatatypeProperty ;
+       rdfs:label "name1"@en; 
+       rdfs:domain :Project;
+       rdfs:range xsd:string . 
+#  --------------------------- Property 9------------------------- 
+:contact1 rdf:type owl:DatatypeProperty ;
+          rdfs:label "contact1"@en; 
+          rdfs:domain :Project;
+          rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 10------------------------- 
+:email1 rdf:type owl:DatatypeProperty ;
+        rdfs:label "email1"@en; 
+        rdfs:domain :Project;
+        rdfs:range xsd:string . 
+#  --------------------------- Property 11------------------------- 
+:objectProperty15 rdf:type owl:ObjectProperty ;
+                  rdfs:label "newObjectProperty"@en; 
+                  rdfs:domain :Class17;
+                  rdfs:range :Shop_Easy . 
+#  --------------------------- Property 12------------------------- 
+:type rdf:type owl:DatatypeProperty ;
+      rdfs:label "type"@en; 
+      rdfs:domain :Class17;
+      rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 13------------------------- 
+:plan rdf:type owl:ObjectProperty ;
+      rdfs:label "plan"@en; 
+      rdfs:domain :Class17;
+      rdfs:range :Sprint . 
+#  --------------------------- Property 14------------------------- 
+:type1 rdf:type owl:ObjectProperty ;
+       rdfs:label "type1"@en; 
+       rdfs:domain :Sprint;
+       rdfs:range :sprint1 . 
+#  --------------------------- Property 15------------------------- 
+:type2 rdf:type owl:ObjectProperty ;
+       rdfs:label "type2"@en; 
+       rdfs:domain :Sprint;
+       rdfs:range :sprint2 . 
+#  --------------------------- Property 16------------------------- 
+:name_1 rdf:type owl:DatatypeProperty ;
+        rdfs:label "name_1"@en; 
+        rdfs:domain :sprint1;
+        rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 17------------------------- 
+:name2 rdf:type owl:DatatypeProperty ;
+       rdfs:label "name2"@en; 
+       rdfs:domain :sprint2;
+       rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 18------------------------- 
+:duration rdf:type owl:ObjectProperty ;
+          rdfs:label "duration"@en; 
+          rdfs:domain :sprint2;
+          rdfs:range :2_weeks . 
+#  --------------------------- Property 19------------------------- 
+:duration rdf:type owl:ObjectProperty ;
+          rdfs:label "duration"@en; 
+          rdfs:domain :sprint1;
+          rdfs:range :2_weeks . 
+#  --------------------------- Property 20------------------------- 
+:goal1 rdf:type owl:DatatypeProperty ;
+       rdfs:label "goal1"@en; 
+       rdfs:domain :sprint1;
+       rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 21------------------------- 
+:goal2 rdf:type owl:DatatypeProperty ;
+       rdfs:label "goal2"@en; 
+       rdfs:domain :sprint2;
+       rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 22------------------------- 
+:feedback rdf:type owl:ObjectProperty ;
+          rdfs:label "feedback"@en; 
+          rdfs:domain :sprint1;
+          rdfs:range :User_Story . 
+#  --------------------------- Property 23------------------------- 
+:feedback rdf:type owl:ObjectProperty ;
+          rdfs:label "feedback"@en; 
+          rdfs:domain :sprint2;
+          rdfs:range :User_Story2 . 
+#  --------------------------- Property 24------------------------- 
+:feedback1 rdf:type owl:ObjectProperty ;
+           rdfs:label "feedback1"@en; 
+           rdfs:domain :User_Story;
+           rdfs:range :user feedback1 . 
+#  --------------------------- Property 25------------------------- 
+:feedback2 rdf:type owl:ObjectProperty ;
+           rdfs:label "feedback2"@en; 
+           rdfs:domain :User_Story;
+           rdfs:range :user_feedback2 . 
+#  --------------------------- Property 26------------------------- 
+:feedback3 rdf:type owl:ObjectProperty ;
+           rdfs:label "feedback3"@en; 
+           rdfs:domain :User_Story2;
+           rdfs:range :user_feedback3 . 
+#  --------------------------- Property 27------------------------- 
+:feedback4 rdf:type owl:ObjectProperty ;
+           rdfs:label "feedback4"@en; 
+           rdfs:domain :User_Story2;
+           rdfs:range :user_feedback4 . 
+#  --------------------------- Property 28------------------------- 
+:description1 rdf:type owl:DatatypeProperty ;
+              rdfs:label "description1"@en; 
+              rdfs:domain :user feedback1;
+              rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 29------------------------- 
+:description2 rdf:type owl:DatatypeProperty ;
+              rdfs:label "description2"@en; 
+              rdfs:domain :user_feedback2;
+              rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 30------------------------- 
+:task_a rdf:type owl:ObjectProperty ;
+        rdfs:label "task_a"@en; 
+        rdfs:domain :user feedback1;
+        rdfs:range :task1 . 
+#  --------------------------- Property 31------------------------- 
+:task_b rdf:type owl:ObjectProperty ;
+        rdfs:label "task_b"@en; 
+        rdfs:domain :user_feedback2;
+        rdfs:range :task2 . 
+#  --------------------------- Property 32------------------------- 
+:task_a1 rdf:type owl:ObjectProperty ;
+         rdfs:label "task_a1"@en; 
+         rdfs:domain :task1;
+         rdfs:range :task1_1 . 
+#  --------------------------- Property 33------------------------- 
+:task_a2 rdf:type owl:ObjectProperty ;
+         rdfs:label "task_a2"@en; 
+         rdfs:domain :task1;
+         rdfs:range :task . 
+#  --------------------------- Property 34------------------------- 
+:task_b1 rdf:type owl:ObjectProperty ;
+         rdfs:label "task_b1"@en; 
+         rdfs:domain :task2;
+         rdfs:range :task2_1 . 
+#  --------------------------- Property 35------------------------- 
+:task_b2 rdf:type owl:ObjectProperty ;
+         rdfs:label "task_b2"@en; 
+         rdfs:domain :task2;
+         rdfs:range :task2_2 . 
+#  --------------------------- Property 36------------------------- 
+:description3 rdf:type owl:DatatypeProperty ;
+              rdfs:label "description3"@en; 
+              rdfs:domain :user_feedback3;
+              rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 37------------------------- 
+:description4 rdf:type owl:DatatypeProperty ;
+              rdfs:label "description4"@en; 
+              rdfs:domain :user_feedback4;
+              rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 38------------------------- 
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:label "description1_1"@en; 
+             rdfs:domain :task1_1;
+             rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 39------------------------- 
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:label "description1_2"@en; 
+             rdfs:domain :task;
+             rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 40------------------------- 
+:description2_1 rdf:type owl:DatatypeProperty ;
+                rdfs:label "description2_1"@en; 
+                rdfs:domain :task2_1;
+                rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 41------------------------- 
+:description2_2 rdf:type owl:DatatypeProperty ;
+                rdfs:label "description2_2"@en; 
+                rdfs:domain :task2_2;
+                rdfs:range rdfs:Datatype . 
+###  Class Definitions (Number of Classes) 22 ###
+#  --------------------------- Class  0------------------------- 
+:Shop_Easy rdf:type owl:Class; 
+           rdfs:label "Teams"@en . 
+#  --------------------------- Class  1------------------------- 
+:Management_Team rdf:type owl:Class; 
+                 rdfs:label "Management Team"@en . 
+#  --------------------------- Class  2------------------------- 
+:Development_Team rdf:type owl:Class; 
+                  rdfs:label "Development Team"@en . 
+#  --------------------------- Class  3------------------------- 
+:Project rdf:type owl:Class; 
+         rdfs:label "Project Manager "@en . 
+#  --------------------------- Class  4------------------------- 
+: rdf:type owl:Class; 
+  rdfs:label "Developers"@en . 
+#  --------------------------- Class  5------------------------- 
+:Class17 rdf:type owl:Class; 
+         rdfs:label "Shop Easy"@en . 
+#  --------------------------- Class  6------------------------- 
+:Sprint rdf:type owl:Class; 
+        rdfs:label "Sprint"@en . 
+#  --------------------------- Class  7------------------------- 
+:sprint1 rdf:type owl:Class; 
+         rdfs:label "sprint1"@en . 
+#  --------------------------- Class  8------------------------- 
+:sprint2 rdf:type owl:Class; 
+         rdfs:label "sprint2"@en . 
+#  --------------------------- Class  9------------------------- 
+:2_weeks rdf:type owl:Class; 
+         rdfs:label "2 weeks"@en . 
+#  --------------------------- Class  10------------------------- 
+:User_Story rdf:type owl:Class; 
+            rdfs:label "User Story1"@en . 
+#  --------------------------- Class  11------------------------- 
+:User_Story2 rdf:type owl:Class; 
+             rdfs:label "User Story2"@en . 
+#  --------------------------- Class  12------------------------- 
+:user feedback1 rdf:type owl:Class; 
+                rdfs:label "user feedback1"@en . 
+#  --------------------------- Class  13------------------------- 
+:user_feedback2 rdf:type owl:Class; 
+                rdfs:label "user feedback2"@en . 
+#  --------------------------- Class  14------------------------- 
+:user_feedback3 rdf:type owl:Class; 
+                rdfs:label "user feedback3"@en . 
+#  --------------------------- Class  15------------------------- 
+:user_feedback4 rdf:type owl:Class; 
+                rdfs:label "user feedback4"@en . 
+#  --------------------------- Class  16------------------------- 
+:task1 rdf:type owl:Class; 
+       rdfs:label "task1"@en . 
+#  --------------------------- Class  17------------------------- 
+:task2 rdf:type owl:Class; 
+       rdfs:label "task2"@en . 
+#  --------------------------- Class  18------------------------- 
+:task1_1 rdf:type owl:Class; 
+         rdfs:label "task1_1"@en . 
+#  --------------------------- Class  19------------------------- 
+:task rdf:type owl:Class; 
+      rdfs:label "task1_2"@en . 
+#  --------------------------- Class  20------------------------- 
+:task2_1 rdf:type owl:Class; 
+         rdfs:label "task2_1"@en . 
+#  --------------------------- Class  21------------------------- 
+:task2_2 rdf:type owl:Class; 
+         rdfs:label "task2_2"@en . 
