@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="loadXML('./xml/hw.xml', 'xmlContent')">
     <div class="container">
         <header>
             <a href="https://www.gndec.ac.in/"><img src="./images/gndeclogo.jpg" alt="GNDEC Logo"></a>
@@ -27,7 +27,7 @@
             <a href="#" onclick="showSection('Task4')">Food Website</a>
             <a href="#" onclick="showSection('Task5')">Travel Website</a>
             <a href="rdfs.html" onclick="showSection('Task6')">RDFs</a>
-            <a href="#" onclick="showSection('Task7')">Task7</a>
+            <a href="#" onclick="showSection('Task7')">Friends List XML</a>
         </nav>
         <section id="Task1" class="section">
             <h1>Training Task Day1</h1>
@@ -60,10 +60,8 @@
             </div>
         </section>
         <section id="Task7" class="section">
-            <h1>Training Task6</h1>
-            <div class="pdf-container">
-                <iframe src="./WebVOWL2.html"></iframe>
-            </div>
+            <h1>Friends List XML</h1>
+            <div class="xml-container" id="xmlContent"></div>
         </section>
         <footer>
             <a href="https://www.linkedin.com/in/shafneet-kaur-90434125b/"> <img src="./images/linkedin-logo.avif" alt="Unable to load" height="30px"></a>
@@ -77,6 +75,14 @@
             });
             document.getElementById(id).classList.add('active');
         } 
+        function loadXML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).textContent = data;
+                })
+                .catch(error => console.error('Error loading XML:', error));
+        }
     </script>
 </body>
 
